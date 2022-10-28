@@ -1,0 +1,10 @@
+2022-10-27 17:00:11,683 camera starting
+2022-10-27 17:00:23,619 camera started
+2022-10-27 17:00:23,620 Starting first for loop
+2022-10-27 17:00:23,621 Load Image File
+2022-10-27 17:00:23,690 Loading Image File Completed and Starting Encoding
+2022-10-27 17:00:26,279 Encoding done
+2022-10-27 17:00:26,279 Starting Video Read
+2022-10-27 17:00:26,767 End Video Read
+2022-10-27 17:00:27,314 Starting second for loop
+2022-10-27 17:00:27,314 Error occurred

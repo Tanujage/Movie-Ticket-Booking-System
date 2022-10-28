@@ -1,0 +1,88 @@
+
+.footer {
+   padding: 40px 0;
+   background-color: black;
+
+}
+
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer  .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid  #ccc;
+    width: 40px;
+    height: 40px;
+    line-height:38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 1px;
+    opacity: 1;
+}
+.fa {
+
+  font-size: 70px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+}
+
+.footer ul {
+     margin-top: 0 ;
+     padding: 0;
+     list-style: none;
+     font-size: 18px;
+     line-height: 1.6;
+     margin-bottom: 0;
+     text-align:center;
+}
+
+.footer ul li a {
+     color: white;
+     text-decoration: none;
+     opacity: 1;
+
+}
+
+.footer ul li {
+display: inline_block;
+padding: 0 15px;
+}
+
+.footer ul li a:hover  {
+    opacity: 1;
+}
+
+.footer .copyright {
+   margin-top: 15px;
+   text-align: center;
+   font-size: 13px;
+   color: #aaa;
+}

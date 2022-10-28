@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookmyMovies</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo"><h1>BookmyMovies</h1></div>
+        <div class="search-box">
+            <form action="" method="get" class="searcher-b">
+                <input type="text" placeholder="Search movies" name="q">
+                <button type="submit"></button>
+            </form>
+        </div>
+        <div class="naive">
+        <ul>
+             <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'users' %}">Movies</a></li>
+            <li><a href="{% url 'login' %}" >Log in</a></li>
+            <li><a href="{%url 'insert' %}" >Sign Up</a></li>
+        </ul>
+        </div>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+    </header>
+
+<table class="content" border="0px" align="center" bgcolor="white" >
+<thead>
+<tr >
+    <TH> </TH>
+    <th> MOVIE NAME</th>
+    <th> TICKET COST</th>
+    <TH>INFO</TH>
+    <th>   </th>
+</tr>
+<tbody>
+{% for row in users %}
+<tr align="center" >
+      <td ><img src="{{ row.movie_img.url }}" width="180" height="200"> </td>
+    <td>{{ row.movie_name }}</td>
+    <td>{{ row.ticket_cost }} </td>
+    <td>{{ row.movie_info }}</td>
+    <td><form action="{% url 'seat' %}">
+        <button type="button" class="btn btn-primary" value="{{ row.movie_name }}" >
+        Book Now
+    </button></form></td>
+    <br><br>
+</tr>
+{% endfor %}
+</tbody>
+ </table>
+
+</body>
+</html>

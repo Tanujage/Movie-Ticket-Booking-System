@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+ {% csrf_token %}
+
+{% block content %}
+ <table class="content" border="0px" align="center" bgcolor="white" >
+<thead>
+<tr >
+    <TH> </TH>
+    <th> MOVIE NAME</th>
+    <th> TICKET COST</th>
+    <TH>INFO</TH>
+    <th>   </th>
+</tr>
+<tbody>
+{% for row in users %}
+<tr align="center" >
+      <td ><img src="{{ row.movie_img.url }}" width="180" height="200"> </td>
+    <td>{{ row.movie_name }}</td>
+    <td>{{ row.ticket_cost }} </td>
+    <td>{{ row.movie_info }}</td>
+    <td><form action="{% url 'book' %}">
+        <button type="button" class="btn btn-primary" value="{{ row.ticket_cost }}" >
+        Book Now
+    </button></form></td>
+    <br><br>
+</tr>
+{% endfor %}
+</tbody>
+ </table>
+</thead>
+{% endblock %}
