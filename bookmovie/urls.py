@@ -28,8 +28,8 @@ urlpatterns = [
     path('bookmymovie/movies', views.userlist, name='users'),
 
     path('occupied/',views.OccupiedSeat, name='seats'),
-    path('bookmymovie-sem5/', views.insertrecord, name='insert'),
-    path('bookmymovie-sem5/',views.login,name='login'),
+    path('bookmymovie/signup', views.insertrecord, name='insert'),
+    path('bookmymovie/login',views.login,name='login'),
 
 
 
