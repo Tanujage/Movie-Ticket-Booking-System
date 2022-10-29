@@ -1,4 +1,4 @@
-absl-py @ file:///opt/conda/conda-bld/absl-py_1639803114343/work
+
 admin==0.0.1
 alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
 anaconda-client==1.7.2
