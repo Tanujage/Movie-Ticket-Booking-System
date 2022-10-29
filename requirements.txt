@@ -39,7 +39,6 @@ Django==4.1.2
 django-dotenv==1.4.2
 django-heroku==0.3.1
 django-multi-form-view==2.0.1
-dlib @ file:///C:/Users/HP/Downloads/Install-dlib-main/Install-dlib-main/dlib-19.19.0-cp38-cp38-win_amd64.whl
 entrypoints==0.3
 et-xmlfile==1.0.1
 face-recognition==1.3.0
