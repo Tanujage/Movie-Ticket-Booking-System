@@ -22,14 +22,14 @@ from . import views
 app_name='bookmovie'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.cam, name='cam'),
-    path('bookmovies/',views.movielist ,name='home' ),
-    path('bookmovies/movies', views.userlist, name='users'),
+   path('admin/', admin.site.urls),
+    path('cam/', views.cam, name='cam'),
+    path('bookmymovie/',views.movielist ,name='home' ),
+    path('bookmymovie/movies', views.userlist, name='users'),
 
     path('occupied/',views.OccupiedSeat, name='seats'),
-    path('bookmovies/signup/', views.insertrecord, name='insert'),
-    path('bookmovies/login',views.login,name='login'),
+    path('bookmymovie/signup', views.insertrecord, name='insert'),
+    path('bookmymovie/login',views.login,name='login'),
 
 
 
