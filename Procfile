@@ -1,1 +1,1 @@
-web:gunicorn app:bookmovie
+web: gunicorn bookmovie.wsgi
