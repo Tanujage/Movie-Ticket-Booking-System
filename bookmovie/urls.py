@@ -23,13 +23,13 @@ app_name='bookmovie'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.cam, name='cam'),
-    path('bookmymovie-sem5/',views.movielist ,name='home' ),
-    path('bookmymovie-sem5/movies', views.userlist, name='users'),
+    path('cam/', views.cam, name='cam'),
+    path('bookmymovie/',views.movielist ,name='home' ),
+    path('bookmymovie/movies', views.userlist, name='users'),
 
     path('occupied/',views.OccupiedSeat, name='seats'),
-    path('bookmymovie-sem5/signup/', views.insertrecord, name='insert'),
-    path('bookmymovie-sem5/login',views.login,name='login'),
+    path('bookmymovie-sem5/', views.insertrecord, name='insert'),
+    path('bookmymovie-sem5/',views.login,name='login'),
 
 
 
