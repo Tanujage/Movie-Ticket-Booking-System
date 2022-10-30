@@ -24,12 +24,12 @@ app_name='bookmovie'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('cam/', views.cam, name='cam'),
-    path('bookmymovie/',views.movielist ,name='home' ),
-    path('bookmymovie/movies', views.userlist, name='users'),
+    path('',views.movielist ,name='home' ),
+    path('/movies/', views.userlist, name='users'),
 
     path('occupied/',views.OccupiedSeat, name='seats'),
-    path('bookmymovie/signup', views.insertrecord, name='insert'),
-    path('bookmymovie/login',views.login,name='login'),
+    path('/signup', views.insertrecord, name='insert'),
+    path('/login',views.login,name='login'),
 
 
 
